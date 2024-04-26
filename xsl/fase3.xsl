@@ -31,14 +31,10 @@
     </xsl:template>
 
     <xsl:template match="monument">
-        <a class="item" target="_blank" href="https://ca.wikipedia.org/wiki/{url}">
+        <a class="item">
             <h3>
                 <xsl:value-of select="name"/>
-            </h3>
-            <img src="public/{image}.jpg"/>    
-            <h4>
-                <xsl:value-of select="place"/>
-            </h4>  
+            </h3>      
         </a>
     </xsl:template>
             
