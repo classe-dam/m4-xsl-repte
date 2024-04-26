@@ -13,7 +13,7 @@
             </head>
             <body>
                 <div>
-                    <h1><xsl:value-of select="continent"/></h1>
+                    <h1>Monuments:<xsl:value-of select="continent"/></h1>
                 </div>
             </body>
         </html>
