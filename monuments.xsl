@@ -57,7 +57,7 @@
             <h3>
                 <xsl:value-of select="name"/>
             </h3>
-            <img src="public/{image}.jpg"/>    
+            <img src="./public/images/{image}.jpg"/>    
             <h4>
                 <xsl:value-of select="place"/>
             </h4>  
