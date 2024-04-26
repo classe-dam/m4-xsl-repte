@@ -11,8 +11,10 @@
                 <title><xsl:value-of select="countries/country[1]/name"/></title>
             </head>
             <body>
-                <div>
+                <header>
                     <h1>Monuments:<xsl:value-of select="countries/country[1]/name"/></h1>
+                </header>
+                <div>
                     <xsl:apply-templates select="countries/country"/>
                 </div>
             </body>

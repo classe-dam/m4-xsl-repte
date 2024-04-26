@@ -11,6 +11,9 @@
                 <title><xsl:value-of select="countries/country[1]/name"/></title>
             </head>
             <body>
+                <header>
+                    <h1>Monuments:<xsl:value-of select="countries/country[1]/name"/></h1>
+                </header>
                 <nav class="main_menu">
                     <ul class="main_menu_options">
                         <a class="main_option" href="africa.xml"><li>Àfrica</li></a>
@@ -24,7 +27,6 @@
                     </ul>
                 </nav>
                 <div>
-                    <h1>Monuments:<xsl:value-of select="countries/country[1]/name"/></h1>
                     <xsl:apply-templates select="countries/country" mode="card"/>
                 </div>
             </body>

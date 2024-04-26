@@ -12,6 +12,9 @@
                 <link rel="stylesheet" href="public/styles/styles.css"/>
             </head>
             <body>
+                <header>
+                    <h1>Monuments:<xsl:value-of select="countries/country[1]/name"/></h1>
+                </header>
                 <nav class="main_menu">
                     <ul class="main_menu_options">
                         <a class="main_option" href="africa.xml"><li>Àfrica</li></a>
@@ -20,12 +23,11 @@
                         <a class="main_option" href="europa.xml"><li>Europa</li></a>
                         <a class="main_option" href="oceania.xml"><li>Oceania</li></a>
                     </ul>
-                    <ul>
+                    <ul class="secondary_menu_options">
                         <xsl:apply-templates select="countries/country" mode="nav"/>
                     </ul>
                 </nav>
                 <div>
-                    <h1>Monuments:<xsl:value-of select="countries/country[1]/name"/></h1>
                     <xsl:apply-templates select="countries/country" mode="card"/>
                 </div>
             </body>
