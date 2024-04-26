@@ -8,7 +8,8 @@
             <head>
                 <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <title><xsl:value-of select="countries/country[1]/name"/></title>
+                <title><xsl:value-of select="continent"/></title>
+                <link rel="stylesheet" href="public/styles/styles.css"/>
             </head>
             <body>
                 <nav class="main_menu">
