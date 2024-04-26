@@ -1,0 +1,94 @@
+body,ul,h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+}  
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.main_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0px;
+    position: sticky;
+    background-color: white;
+}
+
+.main_menu li{
+    list-style-type: none;
+}
+
+.main_menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.main_menu_options{
+    font-size: 1.4rem;
+    border-bottom: 0.4px solid rgb(190, 190, 190);
+    border-top: 0.4px solid rgb(190, 190, 190);;
+    padding: 1rem 0px;
+}
+
+.secondary_menu_options{
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    padding: 0.7rem 0px;
+    background-color: rgb(243, 243, 243);
+}
+
+.country{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: calc(100% - 15px) 15px;
+    align-items: center;
+    padding: 2rem;
+}
+
+.country > h2{
+    border-top: 1px solid rgb(126, 126, 126);
+    padding: 2rem 0px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.country .country-monuments{
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    border: 1px solid rgb(49, 49, 49);
+}
+
+.item h3, .item h4{
+    /* white-space: nowrap; */
+    padding: 15px 10px 
+}
+
+.item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}

@@ -13,7 +13,7 @@
             </head>
             <body>
                 <header>
-                    <h1>Monuments:<xsl:value-of select="countries/country[1]/name"/></h1>
+                    <h1>Monuments: <xsl:value-of select="countries/country[1]/name"/></h1>
                 </header>
                 <nav class="main_menu">
                     <ul class="main_menu_options">
@@ -40,7 +40,7 @@
                 <xsl:value-of select="name"/>
             </h2>     
             <a href="">
-            start
+                ^
             </a>
             <section class="country-monuments">
                 <xsl:apply-templates select="monuments/monument"/>
@@ -49,7 +49,7 @@
     </xsl:template>
 
     <xsl:template match="country" mode="nav">
-        <a href="#{name}" class="country">
+        <a href="#{name}">
             <li><xsl:value-of select="name"/></li>
         </a>
     </xsl:template>
@@ -57,10 +57,10 @@
 
     <xsl:template match="monument">
         <a class="item" target="_blank" href="https://ca.wikipedia.org/wiki/{url}">
+            <img src="./public/images/{image}.jpg"/>    
             <h3>
                 <xsl:value-of select="name"/>
             </h3>
-            <img src="./public/images/{image}.jpg"/>    
             <h4>
                 <xsl:value-of select="place"/>
             </h4>  
